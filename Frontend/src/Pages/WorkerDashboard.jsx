@@ -52,7 +52,7 @@ function WorkerDashboard (){
                                         <td className="p-3 border border-gray-900 text-center"> End Date </td>
                                         <td className="p-3 border border-gray-900 text-center"> Status </td>
                                         <td className="p-3 border border-gray-900 text-center"> Destination </td>
-                                        <td className="p-3 border border-gray-900 text-center"> Action </td>
+                                        <td className=" sm:p-3 p-3 border border-gray-900 text-center"> Action </td>
                                     </tr>
                                 </thead>
                                 <tbody className="bg-white">
@@ -64,7 +64,11 @@ function WorkerDashboard (){
                                             <td className="sm:p-3 p-2 border text-center border-gray-500">{new Date(RequestMessage.endDate).toLocaleDateString('en-SO')} </td>
                                             <td className="sm:p-3 p-2 border text-center border-gray-500"> <span className="text-white  bg-[#6A6458] rounded-[5px] px-3 py-1">{RequestMessage.status}</span> </td>
                                             <td className="sm:p-3 p-2 border text-center border-gray-500"> {RequestMessage.destination}  </td> {/* make the world range 5 word +*/}
-                                            <td className="sm:p-3 p-5 border border-gray-500 text-[#6A6458] text-center underline hover:text-black font-semibold"> <Link to={`/workerViewBox/${RequestMessage.ID}`}> <button className="px-2 py-1 rounded-md bg-[#D9D9D9] hover:bg-[#211f1b] hover:text-white  text-[#211f1b]">View More</button></Link>  </td> 
+                                            <td className="sm:p-3 p-2 border border-gray-500 text-[#6A6458] text-center underline hover:text-black font-semibold"> 
+                                                <Link to={`/workerViewBox/${RequestMessage.ID}`}> 
+                                                <button className="px-2 py-1 w-[100px] rounded-md bg-[#D9D9D9] hover:bg-[#211f1b] hover:text-white  text-[#211f1b]">View More</button>
+                                                </Link>  
+                                            </td> 
                                             {/* <Link to={`/workerViewBox/${RequestMessage._id}`}><td className=""> View more </td></Link> */}
                                         </tr>
                                         })

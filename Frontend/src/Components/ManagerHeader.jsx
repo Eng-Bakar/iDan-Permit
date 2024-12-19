@@ -27,7 +27,6 @@ const HandleClose = () => {
     return <div> 
     <div className="w-full max-w-full fixed pl-[15%]    h-[70px] px-[50px] items-center flex justify-between  ">
         <div className="flex  ">
-        
             <input type="text" placeholder="Search by ID" className="w-[300px] pl-8 border-[1px] h-[40px] text-black bg-lightBlue outline-none rounded-full px-2" />
             <IoIosSearch className="text-[22px] text-black ml-2 absolute mt-[10px]" />
         </div>
@@ -38,6 +37,7 @@ const HandleClose = () => {
             <FaUser style={{display: IsUserOpen ? "block" : "none"}} onClick={HandleClose} className="text-2xl hidden  text-[#6A6458] hover:text-[#27241f]"  />
         </div>
     </div>
+    
     <div style={{display: IsUserOpen ? "block" : "none"}} className="w-[200px]  sm:right-4 right-4   z-10  fixed top-14  h-[220px] shadow-md bg-white rounded-[10px]">
         <div className="w-full h-[50px]  rounded-t-[10px] bg-[#6A6458] shadow-b-md shadow-b-gray-200 pt-5 rounded-b-[20px]">
             <div className="w-[50px] ml-[36%]   py-[10px] px-[5px] h-[50px] shadow rounded-full bg-white">
@@ -47,7 +47,7 @@ const HandleClose = () => {
                 <h1 className="text-[18px] text-center font-semibold font-Roboto"> {JSON.parse(admin).name.substring(0,15)+"..."}</h1> {/*name kan wuxuu ka imade broweser/localstorage dhaxdisa gaar ahaan markuu kuusoo qabto admin information meshas ka dhax doro name, id, iyo title ka aa ubahan thy*/}
                 <h1 className="text-[16px]  font-Roboto"> <span className="font-semibold">ID:</span> {JSON.parse(admin).id} </h1>
                 <h1 className="text-[16px]  font-Roboto"> <span className="font-semibold">Title:</span> {JSON.parse(admin).title} </h1>
-            <button onClick={LogOut} className="w-[100px] flex items-center gap-2 justify-center px-1  h-[35px] mt-3 text-white bg-[#3b3832] hover:bg-[#6A6458] rounded-[5px] ml-7"> Log Out <RiShutDownLine className="w-[20px] h-[20px] " /></button>
+                <button onClick={LogOut} className="w-[100px] flex items-center gap-2 justify-center px-1  h-[35px] mt-3 text-white bg-[#3b3832] hover:bg-[#6A6458] rounded-[5px] ml-7"> Log Out <RiShutDownLine className="w-[20px] h-[20px] " /></button>
             </div>
         </div>
     </div>

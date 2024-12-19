@@ -7,11 +7,11 @@ import { MdSpaceDashboard } from "react-icons/md";
 
 
 function ManagerSidebar (){
-    return     <div className="h-screen fixed z-10 pt-7   w-[10%]     border-r-[#6A6458] border-r-2 border-solid  ">
-        <h1 className=" text-[25px] text-[#6A6458] pb-5 border-b-solid border-b-2 border-b-[#6A6458] w-full font-semibold text-center font-Roboto"> iDan </h1>
-        <div className="mt-6">
-            <Link to="/managerDashboard">
-                <div className="  mb-8  px-[10px]">
+    return <div className="h-screen fixed z-10 pt-7   w-[10%]     border-r-[#6A6458] border-r-2 border-solid  ">
+        <h1 className=" text-[25px] text-[#6A6458] pb-5 sm:border-b-solid sm:border-b-2 sm:border-b-[#6A6458] w-full font-semibold text-center font-Roboto"> iDan </h1>
+        <div className="mt-6 sm:block flex">
+            <Link to="/managerDashboard hidden">
+                <div className="  mb-8   px-[10px]">
                     <MdSpaceDashboard className="text-[30px] ml-10 text-center  text-[#6A6458] " />
                     <h1 className="text-[17px] text-center font-semibold mt-1 text-[#6A6458] "> Dashboard </h1>
                 </div>
